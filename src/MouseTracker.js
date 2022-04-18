@@ -15,35 +15,40 @@ const PositionY = styled.p`
   text-shadow: white 1px 1px 2px;
 `
 
-
-export default function Mouse() {
-    const [posMouse, setPosMouse] = useState({x: 0, y: 0})
-    //mouse tracking function
-    function handleMouseTracking(event) {
-        setPosMouse({x: event.clientX, y: event.clientY})
-    }
+function Cat({mouse}) {
     return (
-        <div className="App" style={{width: "100%", height: "100vh"}} onMouseMove={handleMouseTracking}>
-            la position de la souris est actuellement (X: {posMouse.x} et Y: {posMouse.y})
+        <img src={"./skull.jpg"} style={{position: 'absolute', left: mouse.x, top: mouse.y}}/>
+    );
+
+}
+
+function Mouse({render}) {
+    const [mouse, setMouse] = useState({x: 0, y: 0})
+
+    function handleMouseMove(event) {
+        setMouse({
+            x: event.clientX,
+            y: event.clientY
+        });
+    }
+
+    return (
+        <div style={{height: '100vh'}} onMouseMove={handleMouseMove}>
+            {render(mouse)}
+        </div>
+    );
+
+}
+
+function MouseTracker() {
+    return (
+        <div className={"card card-body bg-success bg-gradient"}>
+            <h1>Déplacez votre souris sur l’écran !</h1>
+            <Mouse render={mouse => (
+                <Cat mouse={mouse}/>
+            )}/>
         </div>
     );
 }
 
-// Tracker component
-export function MouseTracker({posMouse}) {
-    return (
-        <div style={{width: "100%"}}>
-            <div
-                className={
-                    "card card-body text-light " +
-                    "d-flex flex-column justify-content-center align-items-center " +
-                    "m-5 pt-5 pb-5 bg-success bg-opacity-50 bg-gradient"
-                }
-            >
-                <PositionY>
-                    <Mouse/>
-                </PositionY>
-            </div>
-        </div>
-    )
-}
+export default MouseTracker
