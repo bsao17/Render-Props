@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import styled from "styled-components";
 
+// style with styled-component
 const PositionMouse = styled.div`
   font-size: 1.5rem;
   font-weight: bold;
@@ -21,7 +22,7 @@ function Cat({mouse}) {
                     padding: "20px"
                 }
             }/>
-            <h1 className={"text-center card card-text w-50 m-auto bg-dark border-0"}>Dive in Hell ...</h1>
+            <h1 className={"text-center card card-text w-50 m-auto bg-dark border-0"} >Dive in Hell ...</h1>
         </PositionMouse>
     );
 }
