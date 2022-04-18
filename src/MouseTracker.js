@@ -1,14 +1,7 @@
 import React, {useState} from "react";
 import styled from "styled-components";
 
-const PositionX = styled.p`
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #000;
-  text-shadow: white 1px 1px 2px;
-`
-
-const PositionY = styled.p`
+const PositionMouse = styled.p`
   font-size: 1.5rem;
   font-weight: bold;
   color: #000;
@@ -17,7 +10,11 @@ const PositionY = styled.p`
 
 function Cat({mouse}) {
     return (
-        <img src={"./skull.jpg"} style={{position: 'absolute', left: mouse.x, top: mouse.y}}/>
+        <PositionMouse>
+            <img src={"./skull.jpg"} style={{position: 'absolute', left: mouse.x, top: mouse.y}}/>
+            <h1>Déplacez votre souris sur l’écran !</h1>
+            <p>(x: {mouse.x}, y: {mouse.y})</p>
+        </PositionMouse>
     );
 
 }
@@ -43,7 +40,7 @@ function Mouse({render}) {
 function MouseTracker() {
     return (
         <div className={"card card-body bg-success bg-gradient"}>
-            <h1>Déplacez votre souris sur l’écran !</h1>
+
             <Mouse render={mouse => (
                 <Cat mouse={mouse}/>
             )}/>
