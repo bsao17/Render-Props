@@ -1,4 +1,4 @@
-# Exercie autour des props de rendu
+# Exercice autour des props de rendu
 
 Bon pas de panique, je ne suis ni Luciférien, ni buveur de sang, mais l'image que j'ai utilisé pour illustrer
 la props de rendu me semblait propice à ce délire satanique, et puis ça change un peu de la ToDo, du compteur ou la boutique ... non !
