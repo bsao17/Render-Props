@@ -1,0 +1,7 @@
+@mixin mobileTracker {
+  @media screen and (max-width: 400px) {
+      .title {
+        background-color: transparent !important;
+      }
+  }
+}

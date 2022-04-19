@@ -1,5 +1,6 @@
 import React from "react";
 import MouseTracker from "./MouseTracker";
+import styles from "./App.module.scss"
 
 // style with css in js
 const containerButtonStyle = {
@@ -24,10 +25,10 @@ export default function App() {
         <div className="App" style={AppStyle}>
             <MouseTracker/>
             <div style={containerButtonStyle}>
-                <a href={"https://youtu.be/hS75ZyD6mcI"} className={"btn btn-warning d-flex justify-content-center border border-3 border-secondary mb-3 mt-3"} >L'Enfer de Dante</a>
-                <a href={"https://youtu.be/zqcR0z-BTs8"} className={"btn btn-warning d-flex justify-content-center border border-3 border-secondary mb-3"} >Samael le porteur de lumière, l'étoile du matin</a>
-                <a href={"https://youtu.be/UoIPB55I5jI"} className={"btn btn-warning d-flex justify-content-center border border-3 border-secondary mb-3"} >Lilith, la première femme d'Adam</a>
-                <a href={"https://youtu.be/FCS3bXa1l4o"} className={"btn btn-warning d-flex justify-content-center border border-3 border-secondary mb-3"} >Charon, le passeur des enfers</a>
+                <a href={"https://youtu.be/hS75ZyD6mcI"} id={styles.dante} className={"btn btn-warning d-flex justify-content-center border border-3 border-secondary mb-3 mt-3"} >L'Enfer de Dante</a>
+                <a href={"https://youtu.be/zqcR0z-BTs8"} id={styles.samael} className={"btn btn-warning d-flex justify-content-center border border-3 border-secondary mb-3"} >Samael le porteur de lumière, l'étoile du matin</a>
+                <a href={"https://youtu.be/UoIPB55I5jI"} id={styles.lilith} className={"btn btn-warning d-flex justify-content-center border border-3 border-secondary mb-3"} >Lilith, la première femme d'Adam</a>
+                <a href={"https://youtu.be/FCS3bXa1l4o"} id={styles.charon} className={"btn btn-warning d-flex justify-content-center border border-3 border-secondary mb-3"} >Charon, le passeur des enfers</a>
             </div>
         </div>
     );

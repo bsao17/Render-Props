@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import styled from "styled-components";
+import styles from "./mouseTracker.module.scss"
 
 // style with styled-component
 const PositionMouse = styled.div`
@@ -19,10 +20,11 @@ function Cat({mouse}) {
                     top: mouse.y,
                     borderRadius: "50%",
                     boxShadow: "10px 10px 20px #d90012,-10px -10px 20px #ff0018",
-                    padding: "20px"
+                    padding: "20px",
+                    zIndex: "10"
                 }
             }/>
-            <h1 className={"text-center card card-text w-50 m-auto bg-dark border-0"} >Dive in Hell ...</h1>
+            <h1 className={styles.title} >Dive in Hell ...</h1>
         </PositionMouse>
     );
 }
@@ -30,14 +32,14 @@ function Cat({mouse}) {
 function Mouse({render}) {
     const [mouse, setMouse] = useState({x: 0, y: 0})
 
-    function handleMouseMove(event) {
+    function whenMouseMove(event) {
         setMouse({
             x: event.clientX,
             y: event.clientY
         });
     }
     return (
-        <div style={{height: '100vh'}} onMouseMove={handleMouseMove}>
+        <div style={{height: '100vh'}} onMouseMove={whenMouseMove}>
             {render(mouse)}
         </div>
     );
