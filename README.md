@@ -6,7 +6,7 @@ la props de rendu me semblait propice à ce délire satanique, et puis ça chang
 Bon et je suis sûr que d'écouter IMPERA le dernier album de Ghost pendant la réalisation, ne m'a absolument pas influencé 😈 ! 
 
 Oh diablerie, il écoute de la musique en codant, et le pomodoro alors ...bon j'ai pas codé stop Covid non plus,
-et puis si je me loupe, je n'aurais qu'à dire que ce n'est pas un échec, mais que ça n'a pas marché ... 
+et puis si je me loupe, j'aurais juste à dire que ce n'est pas un échec, mais que ça n'a pas marché ... 
 
 Ok je fais pénitence !!!
 
