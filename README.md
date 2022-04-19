@@ -14,3 +14,13 @@ Bref, pour ceux que ça intéresse, j'ai mis quelques liens vers des vidéos int
 venus tout droit du royaume de Samael,
 
 # the morning star ... 
+
+
+PS: pour le fun et la frime 😉, j'ai utilisé plusieurs méthode CSS comme le "CSS in JS", la librairie styled-component, Bootstrap légèrement 
+configuré dans l'index.scss et pour finir en beauté, j'y ai inclus les modules webpack et des mixins pour le responsive, c'est totalement inutile et brouillon,
+comme de mettre plusieurs fonctions dans le composant mouseTracker, mais c'est juste un exercice sans recherche d'efficacité.
+Une sandBox ... tout simplement !
+
+# Ah ...
+Pour terminer ce readme.md, je tiens juste à préciser que ce matin j'ai la flemme de tout traduire en anglais, donc direction
+<a href="https://translate.google.fr/?hl=fr">google-translate</a>
